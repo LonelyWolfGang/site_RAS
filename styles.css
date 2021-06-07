@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: khaki;
+}
+
+button {
+    visibility: hidden;
+    position: fixed;
+    height: 35px;
+    top:0
+}
+
+h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    text-indent: 5px;
+    text-align: justify;
+    word-spacing : -1px;
+    font-size: 20px;
+}
+
+#footer {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    opacity: 100%;
+    margin: 0;
+}
+
+#footer a, #footer a:hover, #footer a:visited {
+    color: white;
+    font-size: 14px;
+}
+
+#footup {
+    min-height: 100%;
+    margin-bottom: -20px;
+}
+#footup::after {
+    content: "";
+    display: block;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+div.dropdown {
+    position: fixed;
+    top: 0;
+}
+
+ul.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li.home {
+    float: right;
+    border-left: 1px solid #bbb;
+}
+
+ul.topnav a {
+    display: block;
+    padding: 6px 7px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.topnav li a:hover {
+    background-color: #111;
+}
+
+ul.topnav li a.active:hover {
+    background-color: #04AA6D;
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        visibility: visible;
+    }
+    
+    h1 {
+        padding-top: 15px;
+    }
+
+    h1, h3 {
+        margin-left: 40.85px;
+    }
+
+    #footer {
+        height: 18px;
+    }
+
+    #footer a, #footer a:hover, #footer a:visited {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    div.dropdown:hover ul.topnav, button ul.topnav {
+        display: block;
+    }
+
+    ul.topnav {
+        height: 100%;
+        display: none;
+        margin-left: 40.85px;
+        padding-bottom: 5px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    ul.topnav li, ul.topnav li.home {
+        float: none;
+    }
+
+    ul.topnav a {
+        padding: 7px 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    h1 {
+        padding-top: 50px;
+    }
+    #footer a, #footer a:hover, #footer a:visited {
+        font-size: 16px;
+    }
+
+    ul.topnav li a {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+}
