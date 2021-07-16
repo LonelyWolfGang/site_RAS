@@ -42,13 +42,13 @@ p.gauche, p.droite {
     width: 100%;
     height: 20px;
     text-align: center;
-    text-decoration: none;
     background-color: #333;
     opacity: 100%;
     margin: 0;
 }
 
 #footer a, #footer a:hover, #footer a:visited {
+    text-decoration: none;
     color: white;
     font-size: 14px;
 }
@@ -175,12 +175,6 @@ ul.topnav li a.active:hover {
         width: 100%;
         padding-top: 35px;
     }
-
-    p.droite {
-        padding-left: 2.5%;
-        padding-right: 5%;
-    }
-
     p.gauche {
         width: 40%;
         float: left;
