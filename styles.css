@@ -4,10 +4,21 @@
 
 html, body {
     height: 100%;
+    font-size: 100%;
 }
 
 body {
-    background-color: khaki;
+    background-color:#151515;
+    color:#f0e68cd3;
+}
+
+a {
+    text-decoration: none;
+    color: #f0e68cd3;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -19,11 +30,13 @@ button {
 
 h1 {
     text-align: center;
+    font-variant: small-caps;
+    font-size: 2.5em;
     padding-top: 32px;
 }
 
 h1 .logo img {
-    height: 50px;
+    height: 2em;
     vertical-align: middle;
 }
 
@@ -32,20 +45,77 @@ h3 {
     padding: 10px 30px 30px;
 }
 
-p {
-    text-indent: 5px;
-    text-align: justify;
-    word-spacing : -1px;
-    font-size: 20px;
+h4 {
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-p.gauche, p.droite {
+h5 {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#page h5 {
     text-align: center;
+}
+
+li {
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    float: none;
+}
+
+table, th, td {
+    border: 1px solid #777;
+    border-spacing: 0;
+    padding: 2px;
+    width: 400px;
+    margin: 20px 100px 0px;
+}
+
+th, td, caption {
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.bas {
+    padding: 10px 10px 0px;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demi {
+    flex: 50%;
+    min-width: 420px;
+}
+
+.demi .cadre {
+    width: 250px;
+    padding: 0px;
+    text-indent: 5px;
+    height: auto;
+    grid-gap: 5px;
+}
+
+#droit {
+    width: 400px;
+    height: 400px;
 }
 
 #footer {
     width: 100%;
-    height: 20px;
     text-align: center;
     background-color: #333;
     opacity: 100%;
@@ -55,7 +125,7 @@ p.gauche, p.droite {
 #footer a, #footer a:hover, #footer a:visited {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 #footup {
@@ -67,8 +137,75 @@ p.gauche, p.droite {
     display: block;
 }
 
+#main {
+    width: 100%;
+}
+
 .active {
     background-color: #04AA6D;
+}
+
+.cadre {
+    margin: 15px auto;
+    border: 1px solid #777;
+    width: 400px;
+    height: 150px;
+    display: grid;
+    overflow-y: auto;
+}
+
+.cadre:hover {
+    border: 1px solid #ccc;
+}
+
+.corps {
+    padding: 5px 15px;
+    height: auto;
+}
+
+.grille {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+.haut {
+    padding: 10px;
+}
+
+.rouge {
+    background-color:#550d01 ;
+}
+
+.titre {
+    background-color:#261979;
+    color: black;
+    padding: 5px;
+    height: 30px;
+}
+
+.long {
+    margin-top: 25px;
+    width: auto;
+    text-align: center;
+}
+
+.unique {
+    margin: auto;
+    border: none;
+    height: auto;
+    min-width: 600px;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-y: unset;
+}
+
+.unique:hover {
+    border: none;
+}
+
+.vert {
+    background-color: #014e18;
 }
 
 div.dropdown {
@@ -98,7 +235,7 @@ ul.topnav li.home {
 ul.topnav a {
     display: block;
     padding: 6px 7px;
-    font-size: 14px;
+    font-size: 0.875em;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -125,17 +262,30 @@ ul.topnav li a.active:hover {
         margin-left: 40.85px;
     }
 
+    #droit {
+        width: 250px;
+        height: 250px;
+    }
+    
     #footer {
         height: 18px;
     }
 
     #footer a, #footer a:hover, #footer a:visited {
-        font-size: 11px;
+        font-size: 0.67em;
         margin-bottom: 10px;
     }
 
     div.dropdown:hover ul.topnav, button ul.topnav {
         display: block;
+    }
+
+    .unique {
+        min-width: unset;
+    }
+
+    li {
+        font-size: 0,67em;
     }
 
     ul.topnav {
@@ -150,7 +300,7 @@ ul.topnav li a.active:hover {
 
     ul.topnav a {
         padding: 7px 8px;
-        font-size: 14px;
+        font-size: 0.875em;
     }
 }
 
@@ -167,23 +317,22 @@ ul.topnav li a.active:hover {
     h1 {
         padding-top: 50px;
     }
+
     #footer a, #footer a:hover, #footer a:visited {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     ul.topnav li a {
         padding: 14px 16px;
-        font-size: 16px;
+        font-size: 1em;
     }
 
-    .demi p {
-        width: 100%;
-        padding-top: 35px;
+    .long {
+        font-size: 1.67em;
     }
-    p.gauche {
-        width: 40%;
-        float: left;
-        padding-left: 5%;
-        padding-right: 2.5%;
+
+    #droit {
+        width: 500px;
+        height: 500px;
     }
 }
