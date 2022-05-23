@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <title>Le Shogi, kezako ? - Renmei Anjou Shogi</title>
+    <title>Le Shôgi, kezako ? - Renmei Anjou Shôgi</title>
 </head>
 <body>
     <div id="footup">
@@ -13,40 +13,93 @@
             <ul class="topnav">
                 <li class="home"><a href="partenaires.html">Partenaires</a></li>
                 <li class="home"><a href="contacts.html">Infos/contacts</a></li>
-                <li class="home"><a href="activites.html">Activités / animations</a></li>
-                <li class="home"><a href="shogi.html" class="active">Shogi, kezako ?</a></li>
+                <li class="home"><a href="activites.html">Agenda</a></li>
+                <li class="home"><a href="shogi.html" class="active">Shôgi, kezako ?</a></li>
                 <li><a href="index.html">Accueil</a></li>
             </ul>
         </div>
         <div id="header">
             <h1>
-                Renmei Anjou Shogi
+                Renmei Anjou Shôgi
                 <a href="index.html" class="logo"><img src="logo-ras.png" /></a>
             </h1>
-            <h3>Les Règles du Shogi</h3>
+            <h3>Le shôgi</h3>
         </div>
-        En cours de construction
-        <p>
-            Le shogi, qu'est ce c'est ?<br />
-            Le shogi est un jeu de plateau japonais où deux adversaires s'affrontent. Par rapport aux jeux occidentaux, le shogi est un cousin lointain des échecs.<br />
-            Cela se joue sur un plateau appelé shogiban comportant une grille de 9x9 cases avec 20 pièces chacun de 8 types différents. L'image ci-contre présente un jeu tel qu'il est disposé en début de partie.<br />
-            <br />
-            Le but est de capturé le roi adversaire symbolisé par cette pièce :<br />
-            <br />
-            Les principales différences par rapport aux échecs occidentaux :<br />
-            <ul>
-                <li>Les pièces du shogi sont pour la plupart plus lentes</li>
-                <li>Il est possible de réutiliser pour son propre camp les pièces capturées à l'adversaire, accélérant le rythme du jeu.</li>
-                <li>Beaucoup plus de rebondissement</li>
-                <li>La promotion touche la plupart des pièces et est pré-établie</li>
-            </ul>
-        </p>
+        <div id="grille">
+            <div class="cadre unique">
+                <h5>Un peu d'histoire</h5><br />
+                <p>
+                    Le shôgi est un jeu à 2 joueurs apparenté au jeu d'échecs occidental ayant les mêmes origines.
+                    Tout aurait commencé dans les environs de l'Inde aux environs du Ve siècle (avec de gros arrondis). Il se propagea  vers l'ouest et se modifia pour donner notre jeu d'échecs et vers l'est pour donner plusieurs autres jeux comme le xiangqi en Chine et le makruk en Thaïlande. Après, il arriva enfin au Japon par les échanges avec la Chine au VIIIe siècle où il se chercha encore longtemps avant de trouver sa forme finale au XVIe siècle.
+                </p>
+                <br />
+                <br />
+                <p>Les principales différences par rapport au jeu d'échecs occidental :</p><br />
+                <ul>
+                    <li>Il est possible de réutiliser pour son propre camp les pièces capturées à l'adversaire</li>
+                    <li>La promotion touche la plupart des pièces et est pré-établie</li>
+                    <li>La protection du roi se construit par l'édification d'un château, groupe de pièces affectées à sa défense, et non d'un roque</li>
+                    <li>Beaucoup plus de rebondissements</li>
+                    <li>Une plus grande liberté de créativité</li>
+                    <li>Les parties nulles sont quasiment inexistantes</li>
+                </ul>
+                <br />
+                <br />
+                <h5>Matériel</h5>
+                <p>Cela se joue sur un plateau appelé shôgiban comportant une grille de 9x9 cases avec 20 pièces chacun de 8 types différents.<br />
+                Nous avons plusieurs design de pièces à l'association : traditionnel, occidentalisé, animal, fléché
+                Placement des pièces en début de parties : </p>{image à mettre}<br />
+                <br />
+                <br />
+                <h5>Objectif</h5>
+                <p>Le but est de capturer le roi adversaire.<br />
+                L'échec ne se prononçant pas, la partie se termine après la prise d'un roi</p><br />
+                <br />
+                <br />
+                <h5>Déplacement des pièces</h5>
+                {image à mettre}<br />
+                <br />
+                <h4>La prise</h4>
+                Lorsqu'une pièce se déplaçe sur une case occupée par une pièce adverse, cette dernière est enlevée du plateau et posée en évidence sur le côté droit du plateau face non promue visible
+                <br />
+                <h4>Promotion</h4>
+                <p>La promotion n'est pas obligatoire sauf si la pièce ne peut plus bouger par la suite (pion et lance sur la dernière ligne, cavalier sur les 2 dernières)<br />
+                La promotion se fait lorsqu'un déplacement se fait sur au moins une case du camp adverse (les 3 dernières rangées), c'est à dire lorsqu'une pièce y entre, y en sort ou s'y déplace<br />
+                Les nouveaux déplacements des pièces sont :</p>
+                <ul>
+                    <li>Le roi et les généraux d'or n'ont pas de promotion</li>
+                    <li>La tour et le fou gagne le déplacement du roi en plus</li>
+                    <li>Les autres pièces deviennent des généraux d'or</li>
+                </ul>
+                <p>La pièce perd sa promotion lorsqu'elle se fait capturer</p><br />
+                <br />
+                <h4>Parachutage</h4>
+                <p>A la place d'un déplacement sur le plateau, il y a la possibilité de jouer une des pièces que l'on a capturé pour la remettre sur n'importe quelle case vide du plateau sauf pour cas :</p><br>
+                <ul>
+                    <li>la pièce ne peut plus bouger par la suite (pion et lance sur la dernière ligne, cavalier sur les 2 dernières)</li>
+                    <li>un pion ne peut pas être parachuté dans une colonne ayant déjà un pion allié</li>
+                </ul>
+                <p>La pièce ne peut pas être promue lors d'un parachutage, elle devra se déplacer lors d'un autre coup pour cela</p><br />
+                <br />
+                <br />
+                <h5>La défense du roi</h5>
+                <p>Contrairement au jeu d'échecs occidental, il n'y a pas de roque pour mettre son roi à l'abri<br />
+                Le roi sera mis à l'abri dans un chateau constitué de généraux qui le protégeront et plusieurs niveaux de chateaux</p>
+                <ul>
+                    <li>Les chateaux de base se faisant de 3 à 5 coups mais sont très fragile, ils ne servent que de transitions pour des chateaux plus évolué</li>
+                    <li>Les chateaux intermédiaires qui demandent 3 à 4 coups supplémentaires, plus résistants</li>
+                    <li>Les forteresses demandant beaucoup de coups pour la mise en oeuvre mais bien plus difficile à prendre</li>
+                </ul>
+            </div>
+        </div>
         <br />
+        <i>Page en cours de création</i>
+        <p><br /><br /></p>
     </div>
 
     <div id="footer">
         <a href="mentions.html">
-            &#169;2013/2021 Renmei Anjou Shogi
+            &#169;2013/2022 Renmei Anjou Shôgi
         </a>
     </div>
 </body>
